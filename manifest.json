@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Politikish",
+  "description": "This extension will remove restrictions on the number of allowed article views on politiken.dk. As if reading in incognito mode.",
+  "version": "0.0.2",
+  "permissions": [
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeContent",
+    "*://*.politiken.dk/"
+  ],
+  "page_action": {
+      "default_icon": {
+         "19": "img/icon-19.png",
+         "38": "img/icon-38.png"
+      },
+      "default_title": "Politikish"
+  },
+  "icons": {
+      "128": "img/icon-128.png",
+      "16": "img/icon-16.png",
+      "48": "img/icon-48.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
